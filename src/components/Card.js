@@ -8,7 +8,7 @@ const Component = (props) => {
     return (
         <div className='card-container'>
             <div className='image' style={{backgroundImage: `url(${project.image})`}}></div>
-            <h4>{project.name}</h4>
+            <h4>{project.title}</h4>
             <p>{project.description}</p>
             <div className='card-links'>
                 <a target="_blank" href={project.repo}>Github</a>

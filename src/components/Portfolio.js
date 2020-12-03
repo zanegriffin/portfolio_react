@@ -34,7 +34,7 @@ const Component = () => {
     const renderProjects = projects.map((project, index) => {
         return (
             <>
-            <Fade left bottom>
+            <Fade left bottom delay={index + "00"}>
             <Card project={project}/>
             </Fade>
             </>
@@ -44,7 +44,7 @@ const Component = () => {
     return (
         <div id='portfolio'>
             <h1>Portfolio</h1>
-            <div>
+            <div className='port-container'>
             {renderProjects}
             </div>
         </div>

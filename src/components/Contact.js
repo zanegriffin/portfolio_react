@@ -9,7 +9,7 @@ const Component = () => {
     return (
         <div className='contact' id='contact'>
             <h1>Ready to Connect?</h1>
-            <Zoom left cascade delay={1000}>
+            <Zoom left cascade>
             <div className='icons'>
                 <div onClick={() => window.open( "https://linkedin.com/in/zane-griffin", "_blank")}><FontAwesomeIcon icon={faLinkedin} size='4x'></FontAwesomeIcon></div>
                 <div onClick={() => window.open( "https://github.com/zanegriffin", "_blank")}><FontAwesomeIcon icon={faGithub} size='4x'></FontAwesomeIcon></div>

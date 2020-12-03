@@ -68,7 +68,16 @@ $comfortaa: 'Comfortaa', cursive;
 
     #portfolio{
       @media (min-width: 768px){
-        display: 
+        .port-container{
+          display: flex;
+          width: 100%;
+          padding: 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+          .card-container{
+            margin: 10px;
+          }
+        }
       }
       .card-container{
         border: 2px solid;
@@ -81,6 +90,11 @@ $comfortaa: 'Comfortaa', cursive;
           // animation: glow 3s ease-in;
           box-shadow: 0 0 30px 2px #5cfaff;
           transform: scale(1.1);
+        }
+        h4{
+          color: white;
+          font-family: $comfortaa;
+          padding-top: 5px;
         }
         p{
           color: white;
@@ -97,8 +111,71 @@ $comfortaa: 'Comfortaa', cursive;
      
 
     .about{
+      
+      .about-container{
+
+        @media (min-width: 768px){
+          display: flex;
+          margin: 0 auto;
+          padding: 0 20px;
+          max-width: 1000px;
+        }
+        
+
+        .flip-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @media (min-width: 768px){
+          justify-content: space-around;
+          flex-direction: row;
+          }
+          .flip-card{
+            margin: 10px;
+            @media (min-width: 1024px){
+              width: 300px;
+              height: 300px;
+              
+              }
+          }
+          
+          .flip-card-front{
+            color: white;
+            p{
+              font-family: $comfortaa;
+            }
+          }
+          .flip-card-back{
+            color: white;
+            
+            background-color: #222222;
+            border: 2px solid $iceblue;
+            p{
+              margin: auto;
+              font-size: 14px;
+              font-family: $monserrat;
+            }
+            @media (min-width: 1024px){
+                height: auto;
+                min-height: 300px;
+                p{
+                  font-size: 20px;
+                }
+              
+            }
+          }
+        }
+      }
       .portrait{
-        border: 2px solid $iceblue;
+        
+        @media (min-width: 768px){
+          width: 200px;
+          height: 200px;
+        }
+        @media (min-width: 1024px){
+          width: 300px;
+          height: 300px;
+        }
       }
       p{
         color: white;
@@ -129,8 +206,11 @@ $comfortaa: 'Comfortaa', cursive;
           font-weight: bold;
           color: violet;
         }
+        @media (min-width: 1024px){
+          font-size: 30px;
+        }
       }
-      div{
+      div:last-of-type{
         height: 150px;
       }
     }
@@ -141,12 +221,22 @@ $comfortaa: 'Comfortaa', cursive;
         margin: 0;
         padding: 0;
         padding-top: 20px;
+        @media (min-width: 1024px){
+          font-size: 36px;
+        }
       }
       .icons{
         display: flex;
         justify-content: space-around;
         margin: 20px;
         padding: 20px;
+        @media (min-width: 1024px){
+          justify-content: center;
+          div{
+            margin: 10px;
+            font-size: 26px;
+          }
+        }
         div{
           color: white;
           a{
