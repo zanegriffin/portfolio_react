@@ -44,7 +44,9 @@ const Component = () => {
     return (
         <div id='portfolio'>
             <h1>Portfolio</h1>
+            <div>
             {renderProjects}
+            </div>
         </div>
     )
 }
