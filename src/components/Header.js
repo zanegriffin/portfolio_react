@@ -28,8 +28,8 @@ const Component = () => {
                           Styles
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                          <Dropdown.Item href="/">Raining City</Dropdown.Item>
-                          <Dropdown.Item href="/modern">Simple Modern</Dropdown.Item>
+                          <Dropdown.Item as={Link} to="/">Raining City</Dropdown.Item>
+                          <Dropdown.Item as={Link} to="/modern">Simple Modern</Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>
                    </Nav>
