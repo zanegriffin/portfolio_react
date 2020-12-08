@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@400;800&display=swap');
+// font-family: 'Quicksand', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
+$Quick: 'Quicksand', sans-serif;
+$Rale: 'Raleway', sans-serif;
+
+body{
+    background-color: whitesmoke;
+}
+.modern{
+    .header{
+        
+        .navbar{
+            box-shadow: 0 0 10px 5px;
+            background-color: teal;
+            .Typewriter{
+                color: orange;
+                font-family: $Rale;
+                font-weight: bold;
+            }
+            a{
+                color: white;
+                &.nav-link{
+                    color: white;
+                }
+            }
+        }
+        #dropdown{
+            border: none;
+        }
+
+        .show{
+            background-color: orange;
+            border-color: white;
+            .nav-link{
+              color: black;
+            }
+            .dropdown-item{
+              color: white;
+              
+            }
+        }
+
+        .btn-success{
+            background-color: orange;
+            border-color: white;
+            &:hover{
+              border-color: white;
+              box-shadow: none;
+            }
+        }
+    }
+
+    .intro{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        position: relative;
+        
+        h1{
+            font-family: $Rale;
+            text-align: center;
+            
+        }
+        hr{
+            // border-top: 1px solid orange;
+            width: 300px;
+            border: 0;
+            // background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+            height: 2px;
+            animation: fadeIn 2s ease-in-out;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, orange));
+
+        }
+        @keyframes fadeIn {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        h3{
+            font-family: $Rale;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .svg-inline--fa{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 20px;
+            font-size: 40px;
+            color: orange;
+        }
+    }
+
+    #portfolio{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-family: $Rale;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .port-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            
+            .card-container{
+                box-shadow: 0 0 15px 3px gray;
+                margin-bottom: 25px;
+                border-radius: 5px;
+                transition: .5s;
+                background-color: teal;
+                color: white;
+                border-left: 3px dotted white;
+                h4{
+                    font-family: $Rale;
+                    margin-top: 5px;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: $Quick;
+                }
+                a{
+                    color: orange;
+                    font-family: $Rale;
+                    font-weight: bold;
+                }
+                &:hover{
+                    transform: scale(1.1)
+                }
+            }
+        }
+    }
+
+    .about{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        h1{
+            font-family: $Rale;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .about-container{
+            @media (min-width: 1024px) {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .flip-container{
+                
+                .flip-card{
+                    
+                    .flip-card-inner{
+                        border-radius: 20px;
+
+                        .flip-card-front{
+                            p{
+                                color: white;
+                                font-family: $Rale;
+                                font-weight: bold;
+                                border-radius: 10px;
+                                background-color: orange;
+                            }
+                        }
+                        .flip-card-back{
+                            p{
+                                font-family: $Quick;
+                                .Typewriter{
+                                    color: orange;
+                                    font-weight: bold;
+                                }
+                            }
+                            .portrait{
+                                @media (min-width: 1024px) {
+                                    width: 300px;
+                                    height: 300px;
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skills{
+        h1{
+            font-family: $Rale;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .skills-container{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+           div{
+               padding: 20px 10px;
+               box-shadow: 0 0 5px 2px gray;
+               border-radius: 5px;
+               background-size: 200% 200%;
+               background-image: linear-gradient(to bottom, orange 50%, transparent 50%);
+               transition: background-color 0.8s;
+               transition: background-position 300ms, background-color 300ms ease;
+               hr{
+                   width: 80%;
+                   border: 0;
+                   height: 2px;
+                   background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, orange));
+               }
+                p{
+                    color: orange;
+                    font-family: $Quick;
+                    &:first-of-type{
+                        color: teal;
+                        font-weight: bold;
+                        font-family: $Rale;
+                    }
+                }
+                &:hover{
+                    background-image: linear-gradient(to bottom, orange 51%, transparent 50%); background-position: 0 100%;
+                    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+                }
+           }
+        }
+        .space{
+            height: 100px;
+        }
+    }
+
+    .contact{
+        h1{
+            font-family: $Rale;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            div{
+                margin: 10px;
+                color: orange;
+                a{
+                    color: orange;
+                }
+            }
+        }
+        h4{
+            font-family: $Rale;
+            text-align:center;
+        }
+        p{
+            font-family: $Quick;
+            text-align:center;
+            padding: 10px;
+            &:last-of-type{
+                color: teal;
+                font-weight: bold;
+            }
+        }
+        div:last-of-type{
+            height: 100px;
+        }
+    }
+
+    .footer{
+        font-family: $Rale;
+        text-transform: uppercase;
+        color: white;
+        background-color: teal;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 10px solid orange;
+        p{
+            margin: 0;
+        }
+    }
+}

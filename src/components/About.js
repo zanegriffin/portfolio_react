@@ -45,11 +45,11 @@ const Component = () => {
         <div className='about' id='about'>
             <h1>Who Am I?</h1>
             <div className='about-container'>
-                <Fade left big cascade delay={1000}>
+                
                 <div className='flip-container'>
                     <div className={'flip-card ' + clicked3}  onClick={() => handleClick3()}>
                         <div className='flip-card-inner'>
-                            <div className='flip-card-front' style={{backgroundImage: 'url(https://res.cloudinary.com/feedmejoy/image/upload/v1607031833/composite_7_bkeh1p.jpg)'}}>
+                            <div className='flip-card-front' style={{backgroundImage: 'url(https://res.cloudinary.com/feedmejoy/image/upload/v1607404040/IMG_1019_fc7p0e.jpg)'}}>
                                 <p>ZANE GRIFFIN</p>
                             </div>
                             <div className='flip-card-back' onClick={() => handleClick3()}>
@@ -85,7 +85,7 @@ const Component = () => {
                         </div>
                     </div>
                 </div>
-                </Fade>
+               
             </div>
         </div>
     )

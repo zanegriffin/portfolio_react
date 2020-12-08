@@ -5,7 +5,7 @@
     .portrait{
         height: 200px;
         width: 200px;
-        background-image: url('https://res.cloudinary.com/feedmejoy/image/upload/v1605566074/0_vj0o52.jpg');
+        background-image: url('https://res.cloudinary.com/feedmejoy/image/upload/v1607404310/IMG_1028_wgg5tm.jpg');
         background-position: center;
         background-repeat: none;
         background-size: cover;
@@ -21,6 +21,7 @@
         position: relative;
         width: 100%;
         height: auto;
+        transition: transform 1s;
     }
     .flip-card {
         background-color: transparent;
@@ -46,6 +47,7 @@
         transform: rotateY(180deg);
         height: auto;
         min-height: 200px;
+        
       }
       
       
@@ -55,6 +57,7 @@
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        
       }
       
       .flip-card-front {
@@ -68,10 +71,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        p{
-            background-color: #111111;
-            
-        }
+        
       }
       
       .flip-card-back {
@@ -81,4 +81,39 @@
         min-height: 200px;
       }
     
+}
+
+.flip-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px){
+  justify-content: space-around;
+  flex-direction: row;
+  }
+  .flip-card{
+    margin: 10px;
+    @media (min-width: 1024px){
+      width: 300px;
+      height: 300px;
+      
+      }
+  }
+  
+  
+  .flip-card-back{
+    p{
+      margin: auto;
+      font-size: 14px;
+      
+    }
+    @media (min-width: 1024px){
+        height: auto;
+        min-height: 300px;
+        p{
+          font-size: 20px;
+        }
+      
+    }
+  }
 }

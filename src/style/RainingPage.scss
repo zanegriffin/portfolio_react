@@ -19,16 +19,43 @@ $comfortaa: 'Comfortaa', cursive;
     background-color: #111111;
 
     .header{
+      .btn-success{
+        background-color: #111111;
+        border-color: $iceblue;
+        &:hover{
+          background-color: #111111;
+          border-color: $iceblue;
+          box-shadow: none;
+        }
+       }
       .navbar{
         border-bottom: 3px solid #5cfaff;
         font-family: $monserrat;
         background-color: rgba(23,23,23,.75);
-        .navbar-brand{
+        .navbar-brand, a{
           color: white;
+          &:hover{
+            color: $iceblue;
+          }
           
         }
         button.navbar-toggler{
           background-color: violet;
+        }
+        
+      }
+      #dropdown{
+        border: none;
+    }
+      .show{
+        background-color: black;
+        border-color: $iceblue;
+        .nav-link{
+          color: $iceblue;
+        }
+        .dropdown-item{
+          color: white;
+          
         }
       }
       
@@ -131,6 +158,7 @@ $comfortaa: 'Comfortaa', cursive;
           flex-direction: row;
           }
           .flip-card{
+           
             margin: 10px;
             @media (min-width: 1024px){
               width: 300px;
@@ -143,6 +171,10 @@ $comfortaa: 'Comfortaa', cursive;
             color: white;
             p{
               font-family: $comfortaa;
+              
+              background-color: #111111;
+                
+            
             }
           }
           .flip-card-back{
@@ -198,19 +230,33 @@ $comfortaa: 'Comfortaa', cursive;
     }
 
     .skills{
-      p{
-        color: white;
-        font-family: $monserrat;
-        text-align: center;
-        span{
-          font-weight: bold;
-          color: violet;
-        }
-        @media (min-width: 1024px){
-          font-size: 30px;
-        }
+      .skills-container{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+          padding: 20px 10px;
+          box-shadow: 0 0 5px 2px gray;
+          border-radius: 5px;
+          hr{
+              width: 80%;
+              border: 0;
+              height: 2px;
+              background: -webkit-gradient(linear, 0 0, 100% 0, from(#111111), to(#111111), color-stop(50%, violet));
+          }
+           p{
+               color: $iceblue;
+               font-family: $monserrat;
+               text-align: center;
+               &:first-of-type{
+                   color: white;
+                   font-weight: bold;
+                   font-family: $comfortaa;
+               }
+           }
       }
-      div:last-of-type{
+      }
+      
+      .space{
         height: 150px;
       }
     }
