@@ -103,10 +103,17 @@ body{
         padding-top: 100px;
         display: flex;
         flex-direction: column;
+        p{
+            text-align: center;
+            color: orange;
+            font-weight: bold;
+            font-family: $Quick;
+            padding-bottom: 20px;
+          }
         h1{
             font-family: $Rale;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             text-transform: uppercase;
         }
         .port-container{
@@ -130,6 +137,9 @@ body{
                 }
                 p{
                     font-family: $Quick;
+                    color: white;
+                    padding-bottom: 0;
+                    font-weight: 400;
                 }
                 a{
                     color: orange;

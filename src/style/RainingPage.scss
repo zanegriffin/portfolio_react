@@ -94,6 +94,11 @@ $comfortaa: 'Comfortaa', cursive;
     }
 
     #portfolio{
+      p{
+        text-align: center;
+        color: white;
+        font-family: $monserrat;
+      }
       @media (min-width: 768px){
         .port-container{
           display: flex;

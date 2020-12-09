@@ -44,6 +44,7 @@ const Component = () => {
     return (
         <div id='portfolio'>
             <h1>Portfolio</h1>
+            <p>A collection of projects ranging from simple functions to fullstack developmnent.</p>
             <div className='port-container'>
             {renderProjects}
             </div>
