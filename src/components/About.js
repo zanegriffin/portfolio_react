@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import '../style/About.scss'
 import Fade from 'react-reveal/Fade';
 import Typewriter from 'typewriter-effect';
+import resume from '../assets/Resume.pdf'
 
 const Component = () => {
 
@@ -64,6 +65,7 @@ const Component = () => {
                             </div>
                             <div className='flip-card-back' onClick={() => handleClick()}>
                             <p>I’m a baker turned coder with a persistent and stubborn personality looking to make beautiful websites full of responsive features.</p>
+                            <a href={resume} target='_blank'>See my resume here.</a>
                             </div>
                         </div>
                     </div>
